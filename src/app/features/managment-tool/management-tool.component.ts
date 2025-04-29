@@ -1,4 +1,4 @@
-import { Component, OnInit, signal, computed, Signal } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -36,6 +36,7 @@ import { ItemsTilesComponent } from '../items-tiles/items-tiles.component';
   styleUrls: ['./management-tool.component.scss'],
 })
 export class ManagementToolComponent implements OnInit {
+  searchText = '';
   listView = true;
   drawerOpen = false;
   selectedItem: Item | null = null;
@@ -43,24 +44,7 @@ export class ManagementToolComponent implements OnInit {
   pageIndex = 0;
   pageSize = 10;
 
-  readonly displayedColumns = ['color', 'name', 'createDate', 'lastUpdate', 'createdBy'];
-
-  searchText = signal('');
-  itemsSignal!: Signal<Item[]>;
-  
-  readonly filteredItemsSignal = computed(() => {
-    const search = this.searchText().toLowerCase();
-    return this.itemsSignal().filter(item =>
-      item.name.toLowerCase().includes(search)
-    );
-  });
-
-  readonly paginatedItemsSignal = computed(() => {
-    const filtered = this.filteredItemsSignal();
-    const startIndex = this.pageIndex * this.pageSize;
-    const endIndex = startIndex + this.pageSize;
-    return filtered.slice(startIndex, endIndex);
-  });
+  displayedColumns = ['color', 'name', 'createDate', 'lastUpdate', 'createdBy'];
 
   constructor(
     private itemsStore: ItemsStore,
@@ -72,14 +56,34 @@ export class ManagementToolComponent implements OnInit {
       description: ['', Validators.required],
       color: ['#000000', Validators.required],
     });
-
-    this.itemsSignal = computed(() => this.itemsStore.itemsSignal() ?? []);
   }
 
   ngOnInit() {
     this.itemsService.getItems().subscribe((items) => {
       this.itemsStore.setItems(items);
     });
+  }
+
+  get items$() {
+    return this.itemsStore.items$;
+  }
+
+  filteredAllItems() {
+    const text = this.searchText.toLowerCase();
+    let filteredItems: Item[] = [];
+    this.items$.subscribe((items) => {
+      filteredItems = items.filter((item: Item) =>
+        item.name.toLowerCase().includes(text)
+      );
+    });
+    return filteredItems;
+  }
+
+  filteredItems() {
+    const filtered = this.filteredAllItems();
+    const startIndex = this.pageIndex * this.pageSize;
+    const endIndex = startIndex + this.pageSize;
+    return filtered.slice(startIndex, endIndex);
   }
 
   onPageChange(event: any) {
@@ -89,7 +93,7 @@ export class ManagementToolComponent implements OnInit {
 
   onSearch($event: Event) {
     const value = ($event.target as HTMLInputElement).value;
-    this.searchText.set(value);
+    this.searchText = value;
   }
 
   setListView(isList: boolean) {
