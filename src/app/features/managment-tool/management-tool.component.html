@@ -20,37 +20,41 @@
         <h2>Management Tool</h2>
 
         <div class="view-toggle">
-            <button mat-icon-button (click)="setListView(false)">
-                <mat-icon fontSet="material-icons" class="grid-icon" [ngClass]="{ 'selected': !listView }">grid_view</mat-icon>
-            </button>
-            <button mat-icon-button (click)="setListView(true)">
-              <mat-icon fontSet="material-icons" class="list-icon" [ngClass]="{ 'selected': listView }">menu</mat-icon>
-            </button>
-            <button fontSet="material-icons" mat-icon-button (click)="openCreateDialog()">
-              <mat-icon class="add-icon">add</mat-icon>
-            </button>
-          </div>
-          
+          <button mat-icon-button (click)="setListView(false)">
+            <mat-icon fontSet="material-icons" class="grid-icon" [ngClass]="{ 'selected': !listView }">grid_view</mat-icon>
+          </button>
+          <button mat-icon-button (click)="setListView(true)">
+            <mat-icon fontSet="material-icons" class="list-icon" [ngClass]="{ 'selected': listView }">menu</mat-icon>
+          </button>
+          <button fontSet="material-icons" mat-icon-button (click)="openCreateDialog()">
+            <mat-icon class="add-icon">add</mat-icon>
+          </button>
+        </div>
       </div>
+
       <div class="flex-row search-field">
         <mat-icon>search</mat-icon>
         <input placeholder="find by name..." (input)="onSearch($event)" />
       </div>
     </div>
+
     <ng-container *ngIf="listView; else tileView">
       <app-items-table
-        [items]="filteredItems()"
+        [items]="paginatedItemsSignal()"
         [displayedColumns]="displayedColumns"
         (edit)="editItem($event)"
       />
     </ng-container>
 
     <ng-template #tileView>
-      <app-items-tiles [items]="filteredItems()" (edit)="editItem($event)" />
+      <app-items-tiles
+        [items]="paginatedItemsSignal()"
+        (edit)="editItem($event)"
+      />
     </ng-template>
 
     <mat-paginator
-      [length]="filteredAllItems().length"
+      [length]="filteredItemsSignal().length"
       [pageSize]="pageSize"
       [pageSizeOptions]="[5, 10, 20]"
       (page)="onPageChange($event)"

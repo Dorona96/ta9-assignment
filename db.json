@@ -2,7 +2,7 @@
   "items": [
     {
       "id": "1",
-      "name": "Car accident1",
+      "name": "Car accident",
       "description": "Accident involving vehicles",
       "color": "#676fe0",
       "createDate": "2021-02-03",

@@ -14,8 +14,8 @@
           <div class="color-box" [style.background]="item.color"></div>
         </td>
         <td>{{ item.name }}</td>
-        <td>{{ item.createDate }}</td>
-        <td>{{ item.lastUpdate }}</td>
+        <td>{{ item.createDate | dateFormat }}</td>
+        <td>{{ item.lastUpdate | dateFormat }}</td>
         <td>{{ item.createdBy }}</td>
       </tr>
     </tbody>
