@@ -1,0 +1,41 @@
+<div class="sidenav-header">
+  <h2>{{ selectedItem ? "Edit Item" : "Create New" }}</h2>
+  <button class="dismiss-btn" mat-icon-button (click)="onClose()">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<form [formGroup]="form" class="sidenav-form flex-col" (ngSubmit)="onSave()">
+  <div class="fields flex-col">
+    <div class="flex-row">
+      <div class="flex-col name-field">
+        <label>Name</label>
+        <input matInput formControlName="name" required />
+      </div>
+      <div class="flex-col color-field">
+        <label>Color</label>
+        <div class="flex-row">
+          <input #colorInput matInput type="color" formControlName="color" required />
+          <mat-icon (click)="colorInput.click()"> arrow_drop_down</mat-icon>
+        </div>
+      </div>
+    </div>
+    <div class="flex-col des-field">
+      <label>Tag Description</label>
+      <textarea matInput formControlName="description" required ></textarea>
+    </div>
+  </div>
+  <div class="action-bts flex-row">
+    <button class="cancel-btn" type="button" (click)="onClose()">Cancel</button>
+    <button
+    class="save-btn flex-row"
+      color="primary"
+      type="submit"
+      [ngClass]="{ 'disabled': form.invalid }"
+      [disabled]="form.invalid"
+    >
+    <mat-icon>save</mat-icon>
+      Save
+    </button>
+  </div>
+</form>

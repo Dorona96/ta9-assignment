@@ -1,0 +1,6 @@
+<div class="tiles">
+  <div class="tile" *ngFor="let item of items" (click)="onEdit(item)">
+    <div class="color-tile" [style.background]="item.color"></div>
+    <div class="tile-name">{{ item.name }}</div>
+  </div>
+</div>

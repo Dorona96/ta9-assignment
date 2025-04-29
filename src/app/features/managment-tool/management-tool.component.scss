@@ -1,0 +1,85 @@
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  .toolbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .url-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .search-field {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 15px;
+    mat-icon {
+      color: rgb(0 0 0 / 44%);
+    }
+    input {
+      margin-left: 10px;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      flex-grow: 1;
+    }
+  }
+
+  .view-toggle {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.selected {
+  color: #1976d2;
+}
+
+.view-toggle {
+  button mat-icon.selected {
+    color: #007af9;
+  }
+
+  .grid-icon {
+    fill: grey;
+  }
+}
+
+.sidenav-container {
+  padding: 40px 80px;
+  width: 100%;
+
+  ::ng-deep mat-sidenav-content {
+    overflow: hidden;
+  }
+}
+
+:host {
+  h2 {
+    color: #0e4f6e;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Helvetica, Thin Italic;
+  }
+  ::ng-deep .sidenav-container {
+    background: #f2f6f9;
+    overflow-x: hidden;
+  }
+
+  ::ng-deep {
+    mat-paginator{
+      background-color: transparent;
+    }
+  }
+}

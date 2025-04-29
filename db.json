@@ -1,0 +1,319 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "Car accident1",
+      "description": "Accident involving vehicles",
+      "color": "#676fe0",
+      "createDate": "2021-02-03",
+      "lastUpdate": "2025-04-29",
+      "createdBy": "Ori Lugasi"
+    },
+    {
+      "id": "2",
+      "name": "Human trafficking for prostitution",
+      "description": "Illegal trade of humans",
+      "color": "#FF00FF",
+      "createDate": "2021-01-26",
+      "lastUpdate": "2021-01-26",
+      "createdBy": "Ran Shim"
+    },
+    {
+      "id": "3",
+      "name": "Murder",
+      "description": "Homicide case",
+      "color": "#b4e5fe",
+      "createDate": "2021-10-16",
+      "lastUpdate": "2025-04-29",
+      "createdBy": "Chen Meir"
+    },
+    {
+      "id": "4",
+      "name": "Suspect",
+      "description": "Person under investigation!",
+      "color": "#FF7F00",
+      "createDate": "2021-09-01",
+      "lastUpdate": "2025-04-29",
+      "createdBy": "Or Bar"
+    },
+    {
+      "id": "5",
+      "name": "Terrorist",
+      "description": "Confirmed terrorist",
+      "color": "#FFC107",
+      "createDate": "2021-11-30",
+      "lastUpdate": "2021-11-30",
+      "createdBy": "Chen Meir"
+    },
+    {
+      "id": "6",
+      "name": "Terrorist attack",
+      "description": "Act of terrorism",
+      "color": "#912727",
+      "createDate": "2020-08-09",
+      "lastUpdate": "2025-04-28",
+      "createdBy": "Or Bar"
+    },
+    {
+      "id": "7",
+      "name": "Cyber Attack",
+      "description": "Cyber attack case",
+      "color": "#00BCD4",
+      "createDate": "2022-05-04",
+      "lastUpdate": "2022-09-04",
+      "createdBy": "Ran Shim"
+    },
+    {
+      "id": "8",
+      "name": "Drug Trafficking",
+      "description": "Illegal drug trade case",
+      "color": "#8BC34A",
+      "createDate": "2021-04-20",
+      "lastUpdate": "2021-08-21",
+      "createdBy": "Or Levi"
+    },
+    {
+      "id": "9",
+      "name": "Kidnapping",
+      "description": "Kidnapping case",
+      "color": "#CDDC39",
+      "createDate": "2023-02-15",
+      "lastUpdate": "2023-04-15",
+      "createdBy": "Chen Meir"
+    },
+    {
+      "id": "10",
+      "name": "Money Laundering",
+      "description": "Money laundering investigation",
+      "color": "#FFC107",
+      "createDate": "2020-06-25",
+      "lastUpdate": "2020-07-10",
+      "createdBy": "Ori Lugasi"
+    },
+    {
+      "id": "11",
+      "name": "Fraud",
+      "description": "Fraud detection case",
+      "color": "#FF5722",
+      "createDate": "2022-11-01",
+      "lastUpdate": "2022-12-01",
+      "createdBy": "Or Bar"
+    },
+    {
+      "id": "12",
+      "name": "Burglary",
+      "description": "Burglary investigation",
+      "color": "#607D8B",
+      "createDate": "2021-08-10",
+      "lastUpdate": "2021-09-10",
+      "createdBy": "Chen Meir"
+    },
+    {
+      "id": "13",
+      "name": "Robbery",
+      "description": "Armed robbery case",
+      "color": "#9C27B0",
+      "createDate": "2023-01-01",
+      "lastUpdate": "2023-01-20",
+      "createdBy": "Or Levi"
+    },
+    {
+      "id": "14",
+      "name": "Arson",
+      "description": "Arson investigation",
+      "color": "#E91E63",
+      "createDate": "2022-02-18",
+      "lastUpdate": "2022-03-20",
+      "createdBy": "Ran Shim"
+    },
+    {
+      "id": "15",
+      "name": "Assault",
+      "description": "Assault case",
+      "color": "#3F51B5",
+      "createDate": "2020-07-07",
+      "lastUpdate": "2020-08-07",
+      "createdBy": "Or Bar"
+    },
+    {
+      "id": "16",
+      "name": "Illegal Arms Trade",
+      "description": "Arms trade case",
+      "color": "#4CAF50",
+      "createDate": "2019-11-11",
+      "lastUpdate": "2020-01-01",
+      "createdBy": "Chen Meir"
+    },
+    {
+      "id": "17",
+      "name": "Car accident",
+      "description": "Accident involving vehicles",
+      "color": "#676fe0",
+      "createDate": "2021-02-03",
+      "lastUpdate": "2025-04-28",
+      "createdBy": "Ori Lugasi"
+    },
+    {
+      "id": "18",
+      "name": "Human trafficking for prostitution",
+      "description": "Illegal trade of humans",
+      "color": "#FF00FF",
+      "createDate": "2021-01-26",
+      "lastUpdate": "2021-01-26",
+      "createdBy": "Ran Shim"
+    },
+    {
+      "id": "19",
+      "name": "Murder",
+      "description": "Homicide case",
+      "color": "#005c8a",
+      "createDate": "2021-10-16",
+      "lastUpdate": "2021-10-16",
+      "createdBy": "Chen Meir"
+    },
+    {
+      "id": "20",
+      "name": "Suspect",
+      "description": "Person under investigation",
+      "color": "#FF7F00",
+      "createDate": "2021-09-01",
+      "lastUpdate": "2021-12-24",
+      "createdBy": "Or Bar"
+    },
+    {
+      "id": "21",
+      "name": "Terrorist",
+      "description": "Confirmed terrorist",
+      "color": "#FFC107",
+      "createDate": "2021-11-30",
+      "lastUpdate": "2021-11-30",
+      "createdBy": "Chen Meir"
+    },
+    {
+      "id": "22",
+      "name": "Terrorist attack",
+      "description": "Act of terrorism",
+      "color": "#FF0000",
+      "createDate": "2020-08-09",
+      "lastUpdate": "2021-02-03",
+      "createdBy": "Or Bar"
+    },
+    {
+      "id": "23",
+      "name": "Cyber Attack",
+      "description": "Cyber attack case",
+      "color": "#00BCD4",
+      "createDate": "2022-05-04",
+      "lastUpdate": "2022-09-04",
+      "createdBy": "Ran Shim"
+    },
+    {
+      "id": "24",
+      "name": "Drug Trafficking",
+      "description": "Illegal drug trade case",
+      "color": "#8BC34A",
+      "createDate": "2021-04-20",
+      "lastUpdate": "2021-08-21",
+      "createdBy": "Or Levi"
+    },
+    {
+      "id": "25",
+      "name": "Kidnapping",
+      "description": "Kidnapping case",
+      "color": "#CDDC39",
+      "createDate": "2023-02-15",
+      "lastUpdate": "2023-04-15",
+      "createdBy": "Chen Meir"
+    },
+    {
+      "id": "26",
+      "name": "Money Laundering",
+      "description": "Money laundering investigation",
+      "color": "#FFC107",
+      "createDate": "2020-06-25",
+      "lastUpdate": "2020-07-10",
+      "createdBy": "Ori Lugasi"
+    },
+    {
+      "id": "27",
+      "name": "Fraud",
+      "description": "Fraud detection case",
+      "color": "#FF5722",
+      "createDate": "2022-11-01",
+      "lastUpdate": "2022-12-01",
+      "createdBy": "Or Bar"
+    },
+    {
+      "id": "28",
+      "name": "Burglary",
+      "description": "Burglary investigation",
+      "color": "#607D8B",
+      "createDate": "2021-08-10",
+      "lastUpdate": "2021-09-10",
+      "createdBy": "Chen Meir"
+    },
+    {
+      "id": "29",
+      "name": "Robbery",
+      "description": "Armed robbery case",
+      "color": "#9C27B0",
+      "createDate": "2023-01-01",
+      "lastUpdate": "2023-01-20",
+      "createdBy": "Or Levi"
+    },
+    {
+      "id": "30",
+      "name": "Arson",
+      "description": "Arson investigation",
+      "color": "#E91E63",
+      "createDate": "2022-02-18",
+      "lastUpdate": "2022-03-20",
+      "createdBy": "Ran Shim"
+    },
+    {
+      "id": "31",
+      "name": "Assault",
+      "description": "Assault case",
+      "color": "#3F51B5",
+      "createDate": "2020-07-07",
+      "lastUpdate": "2020-08-07",
+      "createdBy": "Or Bar"
+    },
+    {
+      "id": "32",
+      "name": "Illegal Arms Trade",
+      "description": "Arms trade case",
+      "color": "#4CAF50",
+      "createDate": "2019-11-11",
+      "lastUpdate": "2020-01-01",
+      "createdBy": "Chen Meir"
+    },
+    {
+      "id": "ce65",
+      "name": "fdsfsd",
+      "description": "fsdfdsfds",
+      "color": "#000000",
+      "createDate": "2025-04-29",
+      "lastUpdate": "2025-04-29",
+      "createdBy": "Or Levi"
+    },
+    {
+      "id": "8345",
+      "name": "car accident",
+      "description": "two teenagers ",
+      "color": "#d33c3c",
+      "createDate": "2025-04-29",
+      "lastUpdate": "2025-04-29",
+      "createdBy": "Or Levi"
+    },
+    {
+      "id": "05f7",
+      "name": "Shooting",
+      "description": "Two Mafia groups  ",
+      "color": "#000000",
+      "createDate": "2025-04-29",
+      "lastUpdate": "2025-04-29",
+      "createdBy": "Or Levi"
+    }
+  ]
+}
